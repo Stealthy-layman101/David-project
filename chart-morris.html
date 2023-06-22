@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from wrraptheme.com/templates/hexabit/html/light/chart-morris.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Apr 2023 21:43:31 GMT -->
+<head>
+<title>:: HexaBit :: Chart Morris</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="HexaBit Bootstrap 4x Admin Template">
+<meta name="author" content="WrapTheme, www.thememakker.com">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="../assets/vendor/morrisjs/morris.css"/>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- MAIN CSS -->
+<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+<link rel="stylesheet" href="assets/css/color_skins.css">
+</head>
+<body>
+    <div class="d-flex flex-row">
+        <div class="left_div bg-white d-flex flex-column">
+          <i class="umbrella fa-solid fa-umbrella"></i>
+          <p class="p1 text-primary">Wons</p>
+          <a href="chart-morris.html">Dashboard</a>
+          <a href=""><i class="mx-2 fa-sharp fa-solid fa-chart-line"></i>Analytics</a>
+          <div class="d-flex flex-row">
+              <i class="fa-solid fa-motorcycle mx-3 mt-2"></i>
+              <a class="riders_link" href="riders.html">Riders</a>
+          </div>
+          <div class="d-flex">
+              <i class="fa-solid fa-users mx-3"></i>
+              <a class="users_link" href="users.html">Users</a>
+          </div>
+          <a href="prices.html"><i class="money fa-solid fa-money-bill "></i>Prices</a>
+          <div class="notify_div">
+          <a href=""><i class="envelope mx-1 fa-solid fa-envelope"></i>  Notifications</a>
+        </div>
+          <a href=""><i class="eye mx-1 fa-solid fa-eye"></i>God eye</a>
+          <a href="">Transactions</a>
+          <a href=""><i class="mx-1 fa-solid fa-gear"></i> Settings</a>
+        </div>
+    
+        <section class="dashboard">
+          <div class="dash_div d-flex flex-row">
+            <h4 class="mx-5 mt-3">Dashboard</h4>
+    
+            <div class="date_div d-flex flex-row mx-4 mt-3">
+              <input id="myDate" class="p-1 date rounded" type="date" placeholder="10-06-21">
+              <input id="myDate2" class="p-1 date rounded" type="date" placeholder="10-06-21">
+            </div>
+          </div>
+    
+          <div class="info_row d-flex flex-row">
+            <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+              <div class="d-flex flex-row">
+                <i class="fa-solid fa-heart-pulse mx-3 mt-2"></i>
+                <div class="d-flex flex-column">
+                  <p class="p2 text-secondary">178+</p>
+                  <p class="text-secondary">Users</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+              <div class="d-flex">
+                <i class="fa-solid fa-motorcycle mx-3 mt-2"></i>
+                <div class="d-flex flex-column">
+                  <p class="p2 text-secondary">200+</p>
+                  <p class="text-secondary">Riders</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+              <div class="d-flex">
+                <i class="fa-solid fa-envelope mx-3 mt-2"></i>
+                <div class="d-flex flex-column">
+                  <p class="p2 text-secondary">190+</p>
+                  <p class="text-secondary">Dispatch companies</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+              <div class="d-flex">
+                <i class="fa-solid fa-suitcase mx-3 mt-2"></i>
+                <div class="d-flex flex-column">
+                  <p class="p2 text-secondary">12+</p>
+                  <p class="text-secondary">Job Application</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+                <div class="col-md-12 col-lg-6 mt-5">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="mx-3">Reports</h2>
+                            <ul class="header-dropdown dropdown dropdown-animated scale-left">
+                                <li> <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="pulse"><i
+                                            class="icon-refresh"></i></a></li>
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="icon-size-fullscreen"></i></a></li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div id="m_area_chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="earnings">
+                    <div class="d-flex flex-row">
+                      <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-heart-pulse mx-3 mt-2"></i>
+                          <div class="d-flex flex-column">
+                            <p class="p2 text-secondary">Total Earnings</p>
+                            <p class="text-success fw-bold">$2,000</p>
+                          </div>
+                        </div>
+                      </div>
+            
+                      <div class="info_div bg-white rounded p-3 mx-3 mt-5">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-motorcycle mx-3 mt-2"></i>
+                          <div class="d-flex flex-column">
+                            <p class="p2 text-secondary">Outstanding Amount</p>
+                            <p class="text-danger fw-bold">$200</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            
+                  <div class="d-flex">
+                    <section class="recent_orders">
+                      <div class="bg-white rounded m-3 p-2">
+                        <div class="d-flex justify-content-between">
+                          <p class="text-secondary m-3 fw-bold">Recent Orders</p>
+                          <p class="on-route bg-light text-primary rounded p-2 mt-2">On route</p>
+                        </div>
+                        <div class="rider1 bg-light rounded m-2 p-3">
+                          <div class="rider_info1">
+                            <p class="text-secondary fw-bold">Rider's Name</p>
+                            <p class="text-secondary fw-bold">User's Name</p>
+                            <p class="text-secondary fw-bold">Pick Up Location</p>
+                            <p class="text-secondary fw-bold">Delivery Location</p>
+                            <p class="text-secondary fw-bold">Price</p>
+                          </div>
+                        </div>
+            
+                        <div class="rider2 rounded m-2 p-3">
+                          <div class="rider_info2">
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa/69 Road Gwarimpa..</p>
+                            <p class="text-secondary fw-bold">$178</p>
+                            <p class="text-danger">View more</p>
+                          </div>
+                        </div>
+            
+                        <div class="rider3 rounded m-2 p-3">
+                          <div class="rider_info2">
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa/69 Road Gwarimpa..</p>
+                            <p class="text-secondary fw-bold">$178</p>
+                            <p class="text-danger">View more</p>
+                          </div>
+                        </div>
+            
+                        <div class="rider4 rounded m-2 p-3">
+                          <div class="rider_info2">
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold"> <img class="mb-1 img-fluid rider_pic"
+                                src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="pic"> John Doe</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa</p>
+                            <p class="text-secondary fw-bold">Road 36, Kubwa/69 Road Gwarimpa..</p>
+                            <p class="text-secondary fw-bold">$178</p>
+                            <p class="text-danger">View more</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+            
+                    <div class="order_state mt-5">
+                      <p class="orderst_p state1 rounded text-primary p-1">Onroute 25k+</p>
+                      <p class="orderst_p state2 rounded text-danger p-1">Canceled 30</p>
+                      <p class="orderst_p state3 rounded text-success p-1">Delivered 50k+</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>    
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/bundles/morrisscripts.bundle.js"></script><!-- Morris Plugin Js --> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/pages/charts/morris.js"></script>
+</body>
+
+</html>
+<script>
+  document.getElementById("myDate").defaultValue = "2021-06-10";
+  document.getElementById("myDate2").defaultValue = "2021-06-10";
+</script>

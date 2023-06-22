@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+/*     overflow: hidden; */
+    background-color: rgb(172, 210, 243);
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+a{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    color: rgb(156, 149, 149);
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+}
+
+/*UTILITY CLASSES*/
+.left_div{
+    row-gap: 1rem;
+    width: 11%;
+    padding-bottom: 18rem;
+    padding-right: 3rem;
+}
+
+.umbrella{
+    margin: 2rem 0rem -3rem 3rem;
+}
+
+.riders_link{
+    margin: 0.3rem 0rem 0rem -0.5rem;
+}
+
+.money{
+    margin: 0rem 0.7rem 0rem 0.2rem;
+}
+
+.envelope{
+    padding-right: 0.2rem;
+}
+
+.notify_div{
+    white-space: nowrap;
+}
+
+.eye{
+    padding-right: 0.3rem;
+}
+
+.users_link{
+    margin-left: -0.5rem;
+}
+
+.p1{
+    margin: 3rem 0rem 0rem 2.5rem;
+}
+
+.dash_div{
+    column-gap: 50rem;
+}
+
+.date_div{
+    column-gap: 1rem;
+}
+
+.info_div{
+    width: 20%;
+}
+
+.p2{
+    font-weight: 500;
+    margin-bottom: -0.2rem;
+}
+
+.rider_info1{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 300px 150px;
+} 
+
+.rider_info2{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 300px 200px 100px 100px;
+} 
+
+.on-route, .rider2{
+    cursor: pointer;
+}
+
+.rider2, .state1{
+    background-color: rgb(199, 238, 251);
+}
+
+.rider3, .state2{
+    background-color: hsla(0, 49%, 74%, 0.485);
+}
+
+.rider4{
+    background-color: rgb(199, 230, 243);
+}
+
+.rider_pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.orderst_p{
+    white-space: nowrap;
+}
+
+.order_state{
+    margin-left: -0.5rem;
+}
+
+.state3{
+    background-color: aquamarine;
+}

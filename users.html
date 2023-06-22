@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users page</title>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/vendor/morrisjs/morris.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="users.css">
+</head>
+
+<body>
+    <div class="d-flex flex-row">
+        <div class="left_div bg-white d-flex flex-column">
+            <i class="umbrella fa-solid fa-umbrella"></i>
+            <p class="p1 text-primary">Wons</p>
+            <a href="chart-morris.html">Dashboard</a>
+            <a href=""><i class="mx-2 fa-sharp fa-solid fa-chart-line"></i>Analytics</a>
+            <div class="d-flex flex-row">
+                <i class="fa-solid fa-motorcycle mx-3 mt-2"></i>
+                <a class="riders_link" href="riders.html">Riders</a>
+            </div>
+            <div class="d-flex">
+                <i class="fa-solid fa-users mx-3"></i>
+                <a class="users_link" href="users.html">Users</a>
+            </div>
+            <a href="prices.html"><i class="money fa-solid fa-money-bill "></i>Prices</a>
+            <a href=""><i class="envelope mx-1 fa-solid fa-envelope"></i>Notifications</a>
+            <a href=""><i class="eye mx-1 fa-solid fa-eye"></i>God eye</a>
+            <a href="">Transactions</a>
+            <a href=""><i class="mx-1 fa-solid fa-gear"></i> Settings</a>
+        </div>
+
+        <section class="dashboard">
+            <div class="dash_div d-flex flex-row">
+                <h4 class="mx-5 mt-3">Dashboard</h4>
+
+                <div class="date_div d-flex flex-row mx-2 mt-3">
+                    <input id="myDate" class="p-1 date rounded" type="date" placeholder="10-06-21">
+                    <input id="myDate2" class="p-1 date rounded" type="date" placeholder="10-06-21">
+                </div>
+            </div>
+
+            <div class="riderinfo d-flex flex-row">
+                <p class="from mt-4 text-dark fw-bold">City</p>
+                <div class="dates mt-3">
+                    <div class="d-flex">
+                        <input id="myDates" class="p-1 date rounded" type="date" placeholder="10-06-21">
+
+                        <p class="text-dark fw-bold mx-4 mt-2">City</p>
+                        <input id="myDated" class="p-1 date rounded" type="date" placeholder="10-06-21">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex order_state mt-5">
+                <p class="state1 rounded text-primary p-1">Onroute 25k+</p>
+                <p class="state2 rounded text-danger p-1 mx-2">Canceled 30</p>
+                <p class="state3 rounded text-success p-1">Delivered 50k+</p>
+              </div>
+
+            <div class="bg-white rounded m-5 p-2">
+                <p class="text-muted fw-bold mx-2 h5">Recent orders</p>
+                <div class="riderdiv text-dark p-2">
+                    <p>Rider's Name</p>
+                    <p>Country</p>
+                    <p>Phone number</p>
+                    <p>Email</p>
+                    <p>Trips</p>
+                    <p>Wallet Balance</p>
+                </div>
+
+                <div class="riderdiv userbg text-dark rounded p-2">
+                    <p><img class="rider_pic" src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="riderpic"> John
+                        Doe</p>
+                    <p>Nigeria</p>
+                    <p>+234 908 777 88...</p>
+                    <p>johndoeec@gmail9l...</p>
+                    <p>5,976</p>
+                    <p>NGN 2,000</p>
+                    <div class="d-flex circlediv">
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="riderdiv userbg text-dark rounded p-2">
+                    <p><img class="rider_pic" src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="riderpic"> John
+                        Doe</p>
+                    <p>Nigeria</p>
+                    <p>+234 908 777 88...</p>
+                    <p>johndoeec@gmail9l...</p>
+                    <p>5,976</p>
+                    <p>NGN 2,000</p>
+                    <div class="d-flex circlediv">
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="riderdiv userbg text-dark rounded p-2">
+                    <p><img class="rider_pic" src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="riderpic"> John
+                        Doe</p>
+                    <p>Nigeria</p>
+                    <p>+234 908 777 88...</p>
+                    <p>johndoeec@gmail9l...</p>
+                    <p>5,976</p>
+                    <p>NGN 2,000</p>
+                    <div class="d-flex circlediv">
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                        <div class="info_c bg-secondary"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="riderdiv userbg text-dark rounded p-2">
+                    <p><img class="rider_pic" src="Images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="riderpic"> John
+                        Doe</p>
+                    <p>Nigeria</p>
+                    <p>+234 908 777 88...</p>
+                    <p>johndoeec@gmail9l...</p>
+                    <p>5,976</p>
+                    <p>NGN 2,000</p>
+                    <div class="d-flex circlediv">
+                    <div class="info_c bg-secondary"></div>
+                    <div class="info_c bg-secondary"></div>
+                    <div class="info_c bg-secondary"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+<script>
+    document.getElementById("myDate").defaultValue = "2021-06-10";
+    document.getElementById("myDate2").defaultValue = "2021-06-10";
+</script>
